@@ -25,14 +25,14 @@ df = pd.read_csv('', parse_dates=['']) #first is your CSV dir & second is your d
 #print(df.head())
 df['Date'] = pd.to_datetime(df[''], format='%Y%m%d') #format is your wishes alignment date format
 
-#newdf = pd.to_datetime(df['<DTYYYYMMDD>'], format="%Y%m%d")
+#newdf = pd.to_datetime(df[''], format="%Y%m%d")
 def candlestick(value):
     fig = go.Figure(data=[go.Candlestick(
-      x=df['Date'],
-      open=df['<OPEN>'],
-      high=df['<HIGH>'],
-      low=df['<LOW>'],
-      close=df['<CLOSE>'],
+      x=df[''],
+      open=df[''],
+      high=df[''],
+      low=df[''],
+      close=df[''],
       increasing_line_color   =  '#3CB371',
       decreasing_line_color  =  '#FF4500'
   )])
