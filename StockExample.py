@@ -9,7 +9,7 @@ from datetime import datetime
 #handeling SSL err
 ssl._create_default_https_context = ssl._create_unverified_context
 #generate token from API
-url = "https://data3.nadpco.com/api/v3/TS/AdjustedTradesById/1?fromdate=13970101&todate=13970707"
+url = ""
 payload = {}
 headers = {
   'Authorization': ''
